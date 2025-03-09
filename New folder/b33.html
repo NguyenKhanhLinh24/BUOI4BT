@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3.3 - Ảnh mờ khi chưa hover</title>
+    <style>
+        .image-container {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            opacity: 0.5; /* Độ mờ 50% */
+            transition: opacity 0.3s ease-in-out;
+        }
+        .image-container:hover img {
+            opacity: 1; /* Hiện rõ khi hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="image1.jpg" alt="Ảnh minh họa">
+    </div>
+</body>
+</html>
